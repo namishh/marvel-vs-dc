@@ -1,0 +1,59 @@
+
+
+.seat {
+  background-color: #444451;
+  height: 2rem;
+  width: 2rem;
+  margin: 3px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+
+  &:nth-of-type(2) {
+    margin-left: 1.8rem;
+  }
+  &:nth-last-of-type(2) {
+    margin-left: 1.8rem;
+  }
+
+  &:not(.seat-sold) {
+    cursor: pointer;
+  }
+
+  &-row{
+    display: flex;
+  }
+}
+
+.seat-sold {
+  background-color: #fff;
+}
+
+.seat-selected {
+  background-color: #49e653;
+}
+
+.screen{
+  margin: 15px 0;
+  width: 24rem;
+  height: 10rem;
+  background-color: $white;
+  transform: rotateX(-150deg);
+  box-shadow: 0 3px 1rem rgba($color: white, $alpha: 0.5);
+}
+.select-seats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-confirm{
+  color: #242333;
+  margin-top: 2rem;
+  text-align: center;
+  display: inline-block;
+  padding: .7rem 1.4rem;
+  border: none;
+  background: $white;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 5px;
+}

@@ -1,0 +1,67 @@
+.merch{
+  padding: 4rem 2rem;
+  &-title {
+    font-size: 3rem;
+    color: blue;
+  }
+  &-products {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+  }
+  &-product{
+    box-shadow: 0 .5rem .5rem rgba($color: #000000, $alpha: 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    border-radius: 7px;
+    overflow: hidden;
+  }
+  &-img{
+    height: 26rem;
+  }
+  &-name-box{
+    margin-top: 1.8rem;
+  
+  }
+  &-name{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $gray-primary;
+  }
+
+  &-endbox {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-price{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $gray-primary;
+  }
+
+  &-link:link, &-link:visited {
+    font-size: 1.4rem;
+    background-color: $blue-dark;
+    padding: .8rem 2rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .4s;
+  
+    &:hover {
+      color: $blue-dark;
+      background: $white;
+    }
+  }
+}

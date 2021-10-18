@@ -1,0 +1,20 @@
+.teams {
+  padding: 4rem 2rem;
+  &-heading {
+    font-size: 3rem;
+    color: $blue-primary;
+    text-align: center;
+  }
+
+  &-cards {
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &-2{
+    margin-top: 5rem;
+  }
+}

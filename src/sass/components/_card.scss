@@ -1,0 +1,88 @@
+.card-hero{
+  // transform: scale(.85);
+  height: 22rem;
+  @include respond(479px) {
+    height: 24rem;
+  }
+
+  min-width: 20rem;
+  width: 42rem;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.2);
+  padding-left: 2rem;
+  color: $blue-dark;
+  padding-top: 2rem;
+  &:hover &-img {
+    left: 82.7%;
+  }
+
+  &:hover &-content {
+    pointer-events: all;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover &-link:link, &-link:visited  {
+    pointer-events: all;
+  }
+  &-img {
+    transition: .7s;
+    height: 25rem;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    @include respond(479px) {
+      height: 20rem;
+    }
+    @include respond(402px){
+      height: 15rem;
+      top: 50%;
+
+    }
+    transform: translate(-50%, -50%);
+  }
+  &-title{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  &-text{
+    width: 28rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    @include respond(479px) {
+      width: 24rem;
+    }
+    @include respond(407px) {
+      width: 20rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &-link:link, &-link:visited {
+    font-size: 1.4rem;
+    background-color: $blue-dark;
+    padding: 1rem 2rem;
+    color: $white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .4s;
+    pointer-events: none;
+  
+    &:hover {
+      color: $blue-dark;
+      background: $white;
+    }
+  }
+
+  &-content{
+    visibility: hidden;
+    transform: translateX(-1.6rem);
+    opacity: 0;
+    transition: .7s;
+
+  }
+}

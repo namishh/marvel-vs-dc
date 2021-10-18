@@ -1,0 +1,39 @@
+.ticket {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 5rem;
+  color: $gray-primary;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  @include respond(550px) {
+    gap: 1rem;
+  }
+  &-movie-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &-timings{
+    display: flex;
+    gap: 3.4rem;
+  }
+
+  &-type{
+    font-size: 8px;
+    transform: translateY(30px);
+  }
+
+  &-timings-value{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+  }
+
+  &-time{
+    border-radius: 6px;
+    cursor: pointer;
+  
+  }
+
+
+}

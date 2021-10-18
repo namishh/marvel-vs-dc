@@ -1,0 +1,38 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000000e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242333;
+  color: #fff;
+  perspective: 1000px;
+  width: clamp(50%, 70rem, 90%);
+  height: 45rem;
+  position: relative;
+  margin: auto;
+  padding: 0 2rem;
+  // background-color: $white;
+  border-radius: 10px;
+
+  &-btn{
+    background-color: transparent;
+    color: $white;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
